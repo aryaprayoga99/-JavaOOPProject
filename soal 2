@@ -1,0 +1,28 @@
+package soal2;
+
+import java.util.ArrayList;
+import java.util.ArrayDeque;
+
+public class KoleksiContoh {
+    public static void main(String[] args) {
+        ArrayList<String> daftarNama = new ArrayList<>();
+        daftarNama.add("Ani");
+        daftarNama.add("Budi");
+        daftarNama.add("Citra");
+
+        System.out.println("Isi ArrayList:");
+        for (String nama : daftarNama) {
+            System.out.println(nama);
+        }
+
+        ArrayDeque<Integer> angka = new ArrayDeque<>();
+        angka.addFirst(10);
+        angka.addLast(20);
+        angka.addFirst(5);
+
+        System.out.println("\nIsi ArrayDeque:");
+        for (int a : angka) {
+            System.out.println(a);
+        }
+    }
+}
