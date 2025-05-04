@@ -1,0 +1,33 @@
+package project.model;
+
+public class Admin extends User {
+    public Admin(String username, String email) {
+        super(username, email);
+    }
+
+    @Override
+    public void showRole() {
+        System.out.println("Role: Admin");
+    }
+}
+package project.model;
+
+public abstract class User {
+    protected String username;
+    protected String email;
+
+    public User(String username, String email) {
+        this.username = username;
+        this.email = email;
+    }
+
+    public abstract void showRole();
+
+    public String getUsername() {
+        return username;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+}
