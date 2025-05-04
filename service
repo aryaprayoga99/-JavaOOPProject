@@ -1,0 +1,21 @@
+package project.service;
+
+import java.util.ArrayList;
+import project.model.User;
+
+public class UserService {
+    private ArrayList<User> users = new ArrayList<>();
+
+    public void addUser(User user) {
+        users.add(user);
+    }
+
+    public void showAllUsers() {
+        for (User user : users) {
+            System.out.println("Username: " + user.getUsername());
+            System.out.println("Email: " + user.getEmail());
+            user.showRole();
+            System.out.println();
+        }
+    }
+}
